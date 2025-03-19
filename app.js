@@ -61,5 +61,9 @@ function sortearAmigo() {
     const elementoResultado = document.createElement("li");
     elementoResultado.textContent = "¡Tu amigo secreto es: " + amigoSorteado + "!";
     resultado.appendChild(elementoResultado);
+
+     // Limpiar la lista de amigos después del sorteo
+     amigos = [];
+     document.getElementById("listaAmigos").innerHTML = "";
 }
 
